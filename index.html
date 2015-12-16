@@ -201,11 +201,35 @@ hr.style {
 #paypal-modal {
     margin: 30px 0 30px 0;
         }
+        
+.col-xl-4.center {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 40px;
+    margin-top:-30px;
+}
+      
+.col-md-6.well.text-center {
+    height: 135px;
+}
+        
+button.btn.btn-primary.btn-lg.btn-block.demand {
+    margin-top: 60px;
+}
+        
     </style>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 center">
+                <h1 class="">Estimated Filing Cost Calculator:</h1>
+            </div>
+        </div>
+    </div>    
+    
 <div class="container">
       <div class="price-box">
         <div class="row">
@@ -303,11 +327,13 @@ hr.style {
                   </div>
               </div>
             </form><!-- FORM END -->
+            
+            
             <!-- PAYPAL SECTION BEGIN -->
     
         <div class="row" id="paypal">
-            <div class="col-sm-12">
-                <div class="col-md-12 well text-center">
+            <div class="col-md-12">
+                <div class="col-md-6 well text-center">
                 <div class="col-lg-12" id="paypal-modal">
                     <p>Ready to Get Started?</p>
                     <button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#basicModal">Start Your Free Filing</button>
@@ -351,9 +377,16 @@ hr.style {
 </div>
             </div>
                 </div>
+            
+            <div class="col-md-6 well text-center">
+                <a href="#"><button class="btn btn-primary btn-lg btn-block demand" >Start Your Demand Letter</button></a>  
+            </div>
+            
             </div>
             <!-- End PP Button -->
         </div>
+         
+          
         <!-- WE ACCEPT PAYMENT IMAGES -->                    
         <div class="form-group">
                       <div class="col-sm-12">
